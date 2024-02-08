@@ -10,18 +10,6 @@
 
 <h2>Submit Form with AJAX and PHP</h2>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AJAX Form Submission</title>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-</head>
-<body>
-
-<h2>Submit Form with AJAX and PHP</h2>
-
 <form id="myForm" enctype="multipart/form-data">
   <label for="name">Name:</label><br>
   <input type="text" id="name" name="name"><br>
@@ -65,29 +53,3 @@ $(document).ready(function(){
 
 </body>
 </html>
-
-
-<div id="response">gh</div>
-
-<script>
-$(document).ready(function(){
-  $('#myForm').submit(function(e){
-    e.preventDefault(); // Prevent default form submission
-    var formData = $(this).serialize(); // Serialize form data
-    $.ajax({
-      type: 'POST',
-      url: 'submit.php', // PHP script to handle form submission
-      data: formData,
-      success: function(response){
-        $('#response').html(response); // Display response from submit.php
-      }
-    });
-  });
-});
-</script>
-
-</body>
-</html>
-
-
-
