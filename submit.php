@@ -33,7 +33,7 @@ if(isset($_FILES['file']) && $_FILES['file']['error'] == UPLOAD_ERR_OK) {
 } else {
     echo "No file uploaded or error in uploading the file.";
 }
-
+ 
 // Display the uploaded file (for images)
 echo "<p>Submitted Name: $name</p>";
 echo "<p>Submitted Email: $email</p>";
