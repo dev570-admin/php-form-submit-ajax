@@ -7,7 +7,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-
+ 
 <h2>Submit Form with AJAX and PHP</h2>
 
 <form id="myForm" enctype="multipart/form-data">
